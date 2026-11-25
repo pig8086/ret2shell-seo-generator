@@ -1,0 +1,19 @@
+{
+  "name": "ret2shell-seo-generator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Generate sitemap.xml and rss.xml for Ret2Shell by reading PostgreSQL directly.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "generate": "node generate.mjs",
+    "self-test": "node generate.mjs --self-test"
+  },
+  "dependencies": {
+    "marked": "^18.3.0",
+    "pg": "^8.23.1",
+    "sanitize-html": "^2.18.2"
+  }
+}
